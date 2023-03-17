@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="ehorizon.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mouse+Memoirs&family=Nunito:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mouse+Memoirs&family=Nunito:wght@700&family=Poppins:wght@500&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+<style>
+  /* gradient fallbacks taken from csstricks.com */
+body {
+  background-color: black;
+  
+  /* SVG fallback for IE 9 (could be data URI, or could use filter) */
+  background-image: url();
+  
+  /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+  background-image: -webkit-gradient(linear, left top, right top, from(rgb(56, 161, 133) ), to(rgb(241, 234, 234)));
+  
+  /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+  background-image: -webkit-linear-gradient(black);
+  
+  /* Firefox 3.6 - 15 */
+  background-image: -moz-linear-gradient(left, red, #f06d06);
+  
+  /* Opera 11.1 - 12 */
+  background-image: -o-linear-gradient(left, red, #f06d06);
+  
+  /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background-image: linear-gradient(balck);
+  margin: 0px;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+
+
+
+
+
+.navbar{
+  background-color: transparent;
+  background-color: transparent;
+  width: 100vw;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 0;
+  
+  color: black;
+  transform: translateX(-40px);
+  padding: 20px;
+  margin: auto;
+  position: absolute;
+
+}
+ul li{
+  float: left;
+  list-style: none;
+
+}
+ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+ul li:hover{
+  border-bottom: 2px solid black;
+}
+#imgs{
+  max-width: 100px;
+  max-height: 100px;
+  filter: grayscale(200%);
+}
+.text{
+  background-color: transparent;
+  margin: 200px;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+
+
+  
+  
+  padding: 20px;
+   outline: 1px solid white;
+   box-shadow: 2px -2px 2px white,-2px 2px 2px white;
+   
+   font-weight: 900;
+   
+      
+  
+  
+}
+#swa{
+  margin: 30px;
+  color: white;
+  text-shadow: 1px 1px 10px black;
+  font-size: 25px;
+  letter-spacing: 6px;
+  font-weight: 800;
+  font-family:'Courier New', Courier, monospace;
+
+  animation: animate 6s infinite ease-in-out;
+}
+#swa span:nth-child(1){
+ transition-delay: 0.2s;
+  font-size: 50px;
+  text-shadow: none;
+  color: white;
+}
+@keyframes animate{
+  0%{
+    color: white;
+
+  }
+  100%{
+    color: black;
+    text-shadow: 1px 1px 10px white;
+  }
+}
+.hall{
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  width: 88vw;
+  
+  background-color: white;
+  position: absolute;
+  margin: 400px;
+  background-color: rgba(238, 243, 242, 0) ;
+
+}
+.hall{
+  padding: 40px;
+}
+.stage{
+  border:1px solid white;
+  border-radius: 5px;
+  width: 140px;
+  height: 70px;
+  font-size: 16px;
+  display: flex;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px -2px 20px rgb(92, 159, 241);  
+}
+.shgirls1{
+  margin: 20px;
+  width: 130px;
+  height: 100px;
+  border: 1px white solid;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  box-shadow: inset 0px -2px 30px rgb(234, 241, 92);  
+
+
+}
+.shboys1{
+  margin: 20px;
+  width: 130px;
+  height: 100px;
+  border: 1px white solid;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  box-shadow: inset 0px -2px 30px rgb(92, 241, 107);  
+}
+#row1{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 100px;
+  
+  
+}
+#row2{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  
+  margin: 40px;
+  
+  }
+  .green{
+    color: white !important;
+    background-color: green;
+    color: white;
+  }
+  #row3{
+    display: flex;
+  }
+  #row4{
+    display: flex;
+    margin: 20px;
+  }
+.cse1,.ece,.eee{
+  margin: 10px 10px 0px 10px;
+  width: 80px;
+  height: 70px;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px -2px 30px rgb(241, 92, 95);  
+}
+.cse2,.eie,.ece2{
+  margin: 0px 10px 0px 10px;
+
+  width: 80px;
+  height: 70px;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px -2px 30px rgb(104, 92, 241);  
+}
+.mba,.mca,.vol{
+  margin: 0px 10px 0px 10px;
+
+  width: 110px;
+  height: 70px;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px -2px 30px rgb(241, 92, 164);  
+}
+.seat{
+  min-width: 20px;
+  min-height: 20px;
+  border: 1px solid green;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  margin: 5px;
+
+  
+  
+}
+.seat:hover{
+  color: white;
+  background-color: green;
+}
+.seatbooking{
+  position: absolute;
+  margin-top: 1130px;
+  overflow: scroll;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  flex-direction: column;
+padding-right: 100px;
+cursor: pointer;
+  
+
+  
+}
+.checkseats{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  
+}
+.flex{
+  display: flex;
+  margin: 3px;
+  margin-left: 70px;
+  align-items: center;
+}
+.seats{
+
+  display: flex;
+   flex-direction: column;
+  justify-content: center;
+  overflow-x: scroll;
+  width: 93vw;
+  background-color: white;
+  padding: 20px;
+  height: 500px;
+  margin: 20px;
+  
+}
+.bookstage{
+  width: 300px;
+  text-align: center;
+  line-height: 45px;
+  height: 40px;
+  transform: translateY(-70px);
+  transform: translateX(10px);
+    background-color: gray;
+}
+.dd{
+  
+color: black;
+border: 1px solid yellow;
+  padding: 8px;
+
+  
+}
+.upperbalcony{
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  
+  
+  margin: 20px 10px 0px 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px -2px 30px rgb(241, 171, 92);  
+}
+.book{
+  border:1px solid black;
+  color:black;
+  padding: 20px;
+  border-radius: 20px;
+
+
+}
+.book:hover{
+  border:1px solid black;
+  color:white;
+  background-color: black;
+  padding: 20px;
+  border-radius: 20px;
+
+
+}
+#footer{
+  position: absolute;
+    background: linear-gradient(90deg, rgb(56, 161, 133) 0%, rgb(126, 173, 156) 100%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 250px;
+  
+    margin-top: 1940px;
+    box-shadow:  1.5px 20px 30px 10px black;
+   }
+   #kl,ion-icon{
+    color: rgb(255, 254, 251);
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    opacity: 40%;
+
+   }
+   #kl,ion-icon:hover{
+    opacity: 1;
+   }
+   .icon{
+    display: inline;
+    margin: 30px;
+   }
+   #footer h5{
+    font-size: 20px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+
+
+   text-shadow: 0px 0px 2px white;
+   margin: 10px;
+   opacity: .8;
+   
+   }
+   #footer h5:hover{
+    opacity: 1;
+   }
+   .vertical{
+    position: absolute;
+    
+   }
+   .shboys2{
+    
+    
+    margin-left: 450px;
+    margin-top: 120px;
+    transform: rotate(-70deg);
+  width: 130px;
+  height: 100px;
+  border: 1px white solid;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  box-shadow: inset 0px -2px 30px rgb(92, 241, 107);  
+   }
+   .shgirls2{
+    
+    position: absolute;
+    
+    transform:  translate(-0px,-100px) rotate(70deg);
+    
+  width: 130px;
+  height: 100px;
+  border: 1px white solid;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  box-shadow: inset 0px -2px 30px rgb(92, 241, 107);  
+   }
+   .disable{
+    cursor: not-allowed;
+    border: 1px grey solid;
+    justify-content: center;
+    display: flex;
+    color: grey;
+    opacity: .8;
+   }
+
+</style>
+<body>
+<div class="navbar">
+   <ul>
+    <li>HOME</li>
+    <li>EVENTS</li>
+    <li>CONTACT US</li>
+   </ul>
+</div>
+<div class="text">
+<span><img src="swaram.jpg" id="imgs"> </span>
+<div id="swa"><span>S</span><span>W</span><span>A</span><span>R</span><span>A</span><span>M</span></div>
+
+
+
+</div>
+<div style="opacity: 84%;;font-weight: 800;display:flex;justify-content: center;flex-direction: column;text-align: center;position: absolute; margin-top: 100px;font-family:'Courier New', Courier, monospace; color: white;">Event on : 23'th Feburary <div>Payment will close on : 21'th feburary</div></div>
+
+
+
+
+<div class="hall">
+  <div class="stage">Stage this way!</div>
+  <div id="row1">
+    <div class="shgirls1">S&H girls</div>
+    <div class="shboys1">S&H boys</div>
+  </div>
+  <div id="row2">
+    <div class="cse1">CSE</div>
+    <div class="ece">ECE</div>
+    <div class="eee">EEE</div>
+  </div>
+  <div id="row3">
+    <div class="cse2">CSE</div>
+    <div class="ece2">ECE</div>
+    <div class="eie">EIE</div>
+  </div>
+  <div class="upperbalcony">UPPERBALCONY</div>
+  <div id="row4">
+    <div class="mba">MBA</div>
+    <div class="mca">
+    AIML & AIDS</div>
+    <div class="mca">MCA</div>
+  </div>
+  <div class="vertical">
+    <div class="shboys2">S&H BOYS</div>
+    <div class="shgirls2">S&H GIRLS</div>
+  </div>
+</div>
+<h3 style="animation: animate 10s infinite;position: absolute;margin-top: 1040px;font-family: sans-serif; color: white;">Booking section<div class="seat">Availabale</div><div class="disable">Booked</div></h3>
+
+<div class="seatbooking">
+ 
+  <div class="seats">
+    
+
+  </div>
+  <div class="bookstage" style="font-family: cursive; color: white;">
+    ALL EYES THIS WAY PLZ!
+  </div>
+  <br>
+  <br>
+  
+  Selected seats
+  <div class="checkseats">
+    
+    <div class="selected">
+
+    </div>
+    <div class="book" type="submit" style="margin-top: 30px;">
+    Book and continue
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <h5 class="text-center"> Get in touch! 🍻 </h5>
+  <div class="icon">
+    <a href="https://www.instagram.com/engal_nanban/?__coig_restricted=1">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+    <a href="mailto:sakthiadhavan452@gmail.com">
+      <ion-icon name="mail-outline"></ion-icon>
+    </a>
+    <a href="tel:9345305335">
+      <ion-icon name="call-outline"></ion-icon>
+    </a>
+
+  </div>
+
+
+
+
+  
+  <!-- threejs.org canvas lines example -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r67/three.min.js"></script>
+
+<script>
+  var mouseX = 0,
+      mouseY = 0,
+      windowHalfX = window.innerWidth / 2,
+      windowHalfY = window.innerHeight / 2,
+      SEPARATION = 200,
+      AMOUNTX = 10,
+      AMOUNTY = 10,
+      camera,
+      scene,
+      renderer;
+  
+  init();
+  animate();
+
+	function init() {
+
+  	var container,
+        separation = 100,
+        amountX = 50,
+        amountY = 50,
+        particle;
+    
+    container = document.createElement( 'div' );
+    document.body.appendChild( container );
+
+    scene = new THREE.Scene();
+
+    renderer = new THREE.CanvasRenderer({ alpha: true }); // gradient; this can be swapped for WebGLRenderer
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    container.appendChild( renderer.domElement );
+    
+    camera = new THREE.PerspectiveCamera(
+    	75,
+      window.innerWidth / window.innerHeight,
+      1,
+      10000
+    );
+    camera.position.z = 100;
+
+		// particles
+    var PI2 = Math.PI * 2;
+    var material = new THREE.SpriteCanvasMaterial({
+    	color: 0xffffff,
+    	program: function ( context ) {
+				context.beginPath();
+        context.arc( 0, 0, 0.5, 0, PI2, true );
+        context.fill();
+      }
+    });
+    
+    var geometry = new THREE.Geometry();
+
+    for ( var i = 0; i < 100; i ++ ) {
+      particle = new THREE.Sprite( material );
+      particle.position.x = Math.random() * 2 - 1;
+      particle.position.y = Math.random() * 2 - 1;
+      particle.position.z = Math.random() * 2 - 1;
+      particle.position.normalize();
+      particle.position.multiplyScalar( Math.random() * 10 + 450 );
+      particle.scale.x = particle.scale.y = 10;
+      scene.add( particle );
+      geometry.vertices.push( particle.position );
+    }
+
+    // lines
+    var line = new THREE.Line( geometry, new THREE.LineBasicMaterial( { color: 0xffffff, opacity: 0.5 } ) );
+    scene.add( line );
+
+    // mousey
+    document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+		document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+    document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+		
+ 		window.addEventListener( 'resize', onWindowResize, false );
+
+	} // end init();
+
+	function onWindowResize() {
+
+  	windowHalfX = window.innerWidth / 2;
+    windowHalfY = window.innerHeight / 2;
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
+	}
+
+	function onDocumentMouseMove(event) {
+
+  	mouseX = event.clientX - windowHalfX;
+    mouseY = event.clientY - windowHalfY;
+
+  }
+
+  function onDocumentTouchStart( event ) {
+
+		if ( event.touches.length > 1 ) {
+
+    	event.preventDefault();
+
+      mouseX = event.touches[ 0 ].pageX - windowHalfX;
+      mouseY = event.touches[ 0 ].pageY - windowHalfY;
+
+    }
+	}
+
+  function onDocumentTouchMove( event ) {
+
+  	if ( event.touches.length == 1 ) {
+
+    	event.preventDefault();
+
+      mouseX = event.touches[ 0 ].pageX - windowHalfX;
+      mouseY = event.touches[ 0 ].pageY - windowHalfY;
+
+		}
+	}
+
+	function animate() {
+    
+		requestAnimationFrame( animate );
+    render();
+    
+	}
+
+	function render() {
+		
+    camera.position.x += ( mouseX - camera.position.x ) * .05;
+    camera.position.y += ( - mouseY + 200 - camera.position.y ) * .05;
+    camera.lookAt( scene.position );
+
+    renderer.render( scene, camera );
+  
+  }
+</script>
+</body>
+</html>
